@@ -1,28 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import FocusedText from "./components/FocusedText"
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        // The FocusedText component below can be reused for #, or pretty much anything you want, simply change the focusOn prop
+        // I've also passed the onClick down as a prop so you can set whatever action you want.
+        return (
+            <div className="App">
+                <FocusedText focusOn="@" clickAction={alert}/>
+            </div>
+        );
+    }
 }
 
-export default App;
+export default App

@@ -1,0 +1,16 @@
+.container {
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: aliceblue;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 4px;
+}
+
+.mention {
+    color: red;
+    display: inline;
+}
